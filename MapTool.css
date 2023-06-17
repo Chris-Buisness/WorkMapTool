@@ -1,0 +1,222 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Style for the main header */
+h1 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+/* Style for the paragraph */
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Style for the home button */
+#home-button {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Container for the input form */
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Style for the search input */
+.search-Input {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Style for the form elements */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Style for the form labels */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+/* Style for the form inputs */
+input[type="text"] {
+  display: block;
+  width: 25%; 
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Add a new style for the form buttons container */
+.buttons-container {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+/* Add a new style for the output container */
+#output {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the form inputs on focus */
+input[type="text"]:focus {
+  border-color: #0077ff;
+}
+
+/* Style for the form buttons */
+button {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  background-color: #0077ff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Style for the form buttons on hover */
+button:hover {
+  background-color: #005ae6;
+}
+
+/* Container for the search output */
+#search-OutputContainer {
+  margin-bottom: 20px;
+}
+
+
+/* calculateRoute Output Styling */
+#search-output {
+  position: absolute;
+  z-index: 1000;
+  max-height: 200px; /* Limit the height to display 10 results */
+  overflow-y: auto; /* Add a scrollbar when there are more results */
+  background-color: black;
+  width: 100%;
+}
+
+.search-result {
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.search-result:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+/* Style for the wrapper title */
+.wrapper-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Style for the search client/employee input */
+
+#search-ClientEmployee {
+  display: block;
+  width: 25%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s ease-in-out;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Style for the search client/employee input on focus */
+#search-ClientEmployee:focus {
+  border-color: #0077ff;
+}
+
+/* Container for the map */
+#map-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#directions-panel {
+  background-color: white;
+  color: black;
+  overflow-y: auto;
+  max-height: 900px;
+  float: left;  
+  height: 100%;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the map */
+#map
+
+
+/* Style the infoWindow */
+.gm-style .gm-style-iw-c {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the custom autocomplete items */
+
+.custom-pac-item {
+  cursor: pointer;
+  padding: 0 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 30px;
+  font-size: 11px;
+  color: #000;
+  border-top: 1px solid #e6e6e6;
+}
+
+.custom-pac-item:hover {
+  background-color: #fafafa;
+}
+
+
+

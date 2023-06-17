@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Assistant</title>
+  <script src="MapTool.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.2/xlsx.full.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="MapTool.css">
+</head>
+<body>
+  <a id="home-button" href="../MainPage.html">Main Page</a>
+
+  <h1>GardaWorld Map Tool</h1>
+  <p>Route estimation and Schedule Assistance</p>
+
+  <div class="search-RouteContainer">
+    <div class="search-Input">Route Search</div>
+    <form id="route-form">
+      <label for="origin"></label>
+      <input id="origin" type="text" placeholder="Origin" class="form-control">
+
+      <label for="destination"></label>
+      <input id="destination" type="text" placeholder="Destination" class="form-control">
+
+      <div class="buttons-container">
+        <button id="clear-route" type="button">Clear Route</button>
+        <button id="int-search" type="submit">Submit</button>
+        <input type="checkbox" id="toggle-traffic" onclick="toggleTraffic();" />
+<label for="toggle-traffic">Show Traffic</label>
+
+      </div>
+
+      <div id="output"></div>
+    </form>
+  </div>
+
+  <div id="search-OutputContainer">
+    <div class="wrapper-title"> </div>
+    <label for="search-ClientEmployee"></label>
+    <input type="text" id="search-ClientEmployee" placeholder="Search Client/Employee" />
+    <div id="search-output"></div>
+
+    <input type="file" id="excelFile" accept=".xlsx, .xls, .csv" />
+  </div>
+
+  <div id="map-container">
+    <div id="directions-panel"></div>
+    <div id="map" style="height: 900px; width: 900px; margin: 0 auto;"></div>
+  </div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3AXEVsXRRfhEPUglKZjgeH8n7BW8DV2U&libraries=places&callback=initMap"></script>
+</body>
+</html>
